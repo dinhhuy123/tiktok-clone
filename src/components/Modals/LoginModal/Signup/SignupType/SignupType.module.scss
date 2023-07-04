@@ -1,0 +1,168 @@
+// Sign up with email
+.description {
+    color: rgb(22, 24, 35);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.change-link {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 500;
+    font-size: 12px;
+    display: inline-block;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.emailInput {
+    border-radius: 2px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    padding-inline-start: 12px;
+    color: rgb(22, 24, 35);
+    line-height: 100%;
+    outline: none;
+    font-size: 1.6rem;
+    height: 44px;
+    caret-color: rgb(254, 44, 85);
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.phone-container {
+    background: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 4px;
+    margin-bottom: 9px;
+    display: flex;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 98px;
+        width: 1px;
+        height: 30px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+}
+
+.code-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.phone-number {
+    background: transparent;
+    border-radius: 2px;
+    padding-inline-start: 12px;
+    color: rgb(22, 24, 35, 0.75);
+    line-height: 100%;
+    outline: none;
+    font-size: 15px;
+    height: 44px;
+    caret-color: rgb(254, 44, 85);
+    padding-inline-end: unset;
+}
+
+.send-code {
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-code {
+    border: 2px 0 0 2px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-inline-end-width: 0px;
+    padding-inline-start: 12px;
+    color: rgb(22, 24, 35);
+    line-height: 100%;
+    outline: none;
+    font-size: 1.5rem;
+    height: 44px;
+    caret-color: rgb(254, 44, 85);
+    width: 100%;
+    padding-inline-end: unset;
+}
+
+.code-btn {
+    color: rgb(22, 24, 35);
+    // font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0px 16px;
+    flex-shrink: 0;
+}
+
+.disabled-code-btn {
+    color: rgba(22, 24, 35, 0.34);
+    cursor: not-allowed;
+}
+// Sign up with phone
+.condition {
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.check-condition {
+    width: 32px;
+    margin-right: 8px;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.text-condition {
+    color: rgba(22, 24, 35, 0.75);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    line-height: 16px;
+    display: inline;
+}
+
+.signup-btn {
+    border-radius: 4px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 44, 85);
+    min-width: 120px;
+    min-height: 46px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: var(--font-family);
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 6px 8px;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 21px;
+}
+
+.disabled-btn {
+    border: none;
+    color: rgba(22, 24, 35, 0.34);
+    background-color: rgba(22, 24, 35, 0.06);
+    pointer-events: none;
+}

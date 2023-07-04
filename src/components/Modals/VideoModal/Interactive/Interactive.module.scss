@@ -1,0 +1,132 @@
+.interactive {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userAction {
+    display: flex;
+}
+
+.actionContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.actionContainer:first-child {
+    margin-right: 20px;
+}
+
+.actionBtn {
+    align-items: center;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 20px;
+    height: 32px;
+    justify-content: center;
+    margin-right: 6px;
+    width: 32px;
+}
+
+.actionIcon {
+    color: rgb(22, 24, 35);
+    width: 20px;
+    height: 20px;
+}
+
+.count {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.2rem;
+    line-height: 17px;
+}
+
+.userInteractive {
+    display: flex;
+    align-items: center;
+}
+
+.iconLink {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.interIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.sharedBtn {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.1);
+    }
+}
+
+// Headless Tippy css
+.shareList {
+    position: relative;
+}
+
+.arrow {
+    top: 3px;
+    right: 22px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-67%) rotate(45deg);
+    background-color: var(--white);
+    // box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+    // border-width: 17px 15px;
+    // border-style: solid;
+    // border-color: transparent transparent var(--white);
+    // border-color: transparent transparent red;
+}
+
+.shareListContainer {
+    width: 280px;
+    max-height: 448px;
+    padding: 8px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    overflow: auto;
+}
+
+.listBody {
+    z-index: 1;
+}
+
+.itemLink {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 11px 16px;
+    margin: 0px 3px 0px 4px;
+    position: relative;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        text-decoration: none;
+    }
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-left: 12px;
+}

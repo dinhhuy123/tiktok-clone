@@ -1,0 +1,60 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    margin-top: var(--default-layout-header-height);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    flex-shrink: 0;
+    width: var(--sidebar-width);
+}
+
+.content {
+    flex: 1 1;
+    // margin-left: var(--sidebar-width);
+    padding: 32px 24px;
+}
+
+.getApp {
+    position: fixed;
+    right: 16px;
+    bottom: -32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: none;
+    transition: all 400ms cubic-bezier(0.65, 0, 0.35, 1) 0s;
+}
+
+.getAppBtn {
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.75);
+    min-width: 90px;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+}
+
+.toTop {
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    min-width: 0;
+    border-radius: 52px;
+    background: rgba(254, 44, 85, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (max-width: 1071px) {
+    .content {
+        margin-left: 90px;
+    }
+}

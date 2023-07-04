@@ -1,0 +1,88 @@
+.scrollbarView {
+    margin-bottom: 0 !important;
+    overflow: hidden scroll !important;
+}
+.scrollbarTrack {
+    top: 0;
+    bottom: 0;
+    right: 3px;
+    transition: opacity 0.5s !important;
+}
+.scrollbarThumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+.wrapper {
+    width: inherit;
+}
+
+.innerFixed {
+    // overflow-y: overlay;
+    position: fixed;
+    top: 61px;
+    bottom: 0;
+    // z-index: 1;
+    width: inherit;
+    max-height: calc(100% - 60px);
+    padding-bottom: 20px;
+    background-color: var(--white);
+
+    // &::-webkit-scrollbar {
+    //     display: none;
+    // }
+    // &:hover {
+    //     &::-webkit-scrollbar {
+    //         display: block;
+    //     }
+    // }
+}
+
+.content {
+    padding: 20px 8px 26px;
+}
+
+.loginSidebar {
+    display: flex;
+    flex-direction: column;
+    // border-top: 1px solid #e3e3e4;
+    position: relative;
+    padding: 20px 8px 24px 8px;
+    margin: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 0;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+}
+
+.title {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.login-btn {
+    min-width: 168px;
+    min-height: 48px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1071px) {
+    .wrapper {
+        padding: 20px 8px 0 16px;
+        width: 90px;
+        border-right: 1px solid rgba(22, 24, 35, 0.12);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    .sidebar {
+        min-height: 100%;
+    }
+}

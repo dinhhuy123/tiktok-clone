@@ -1,0 +1,178 @@
+.wrapper {
+    display: flex;
+    background-color: #010101;
+    inset: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+.commentContainer {
+    background-color: var(--white);
+    display: flex;
+    flex: 0 0 544px;
+    flex-direction: column;
+}
+
+.commentHeader {
+    border-bottom: 1px solid rgba(22, 24, 35, 0.2);
+    padding: 32px 32px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.userInfo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.linkUserInfo {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 40px;
+    margin-right: 12px;
+    object-fit: cover;
+    width: 40px;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nickname {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.name {
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+
+.videoSetting {
+    cursor: pointer;
+}
+
+.followingBtn {
+    color: rgb(22, 24, 35);
+    border-color: rgb(208, 209, 211);
+    font-weight: 600;
+    padding: 7px 16px;
+    &:hover {
+        background-color: rgb(248, 248, 248);
+        border-color: rgb(208, 209, 211);
+    }
+}
+
+.followBtn {
+    font-weight: 600;
+    padding: 7px 16px;
+    min-width: 106px;
+}
+
+.videoName {
+    font-weight: 400;
+}
+
+.videoMusic {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+.musicIcon {
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.contactToUser {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+}
+
+.userVideoLink {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.videoLink {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    padding: 7px 0px 5px 12px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+.browserCopy {
+    border: none;
+    background: none rgba(22, 24, 35, 0.06);
+    outline: none;
+    color: rgb(22, 24, 35);
+    font-weight: 700;
+    flex: 0 0 auto;
+    cursor: pointer;
+    padding: 7px 18px;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+// Tippy css
+.deleteContainer {
+    min-width: 200px;
+    position: relative;
+}
+
+.arrow {
+    top: -27px;
+    right: 3px;
+    position: absolute;
+    border-width: 17px 15px;
+    border-style: solid;
+    border-color: transparent transparent var(--white);
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.itemList {
+    padding: 8px 16px;
+    list-style: none;
+}
+
+.title {
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    &:first-child {
+        border-bottom: 1px solid rgba(22, 24, 35, 0.1);
+    }
+    &:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
+}

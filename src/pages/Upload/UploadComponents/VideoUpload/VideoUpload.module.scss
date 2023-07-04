@@ -1,0 +1,256 @@
+.noPadding {
+    margin-bottom: 12px;
+    padding-top: 0;
+}
+
+.uploadVideoContainer {
+    padding: 24px 40px;
+}
+
+.postTitle {
+    span {
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: rgba(22, 24, 35, 1);
+        display: block;
+    }
+    .subTitle {
+        margin-top: 2px;
+        span {
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 400;
+            color: rgba(22, 24, 35, 0.5);
+        }
+    }
+}
+
+.content {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 130px;
+    .selectFile {
+        margin-right: 8px;
+    }
+}
+
+.visible {
+    display: none;
+}
+
+.buttonContainer {
+    border-radius: 8px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background 0.15s ease-in-out 0s;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 458px;
+    width: 260px;
+    border: 2px dashed rgba(22, 24, 35, 0.2);
+    box-sizing: border-box;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.uploadIcon {
+    width: 40px;
+    height: 29px;
+}
+
+.selectVideo {
+    text-align: center;
+    margin-top: 24px;
+    span {
+        font-size: 20px;
+        color: rgba(22, 24, 35, 1);
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+.dragFile {
+    margin-top: 4px;
+    margin-bottom: 24px;
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+.videoDesc {
+    color: rgb(115, 116, 123);
+    div {
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+.uploadFile {
+    width: 186px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 26px;
+    .uploadFileBtn {
+        min-width: 96px;
+        width: 100%;
+        height: 36px;
+    }
+}
+
+.setting {
+    margin-left: 24px;
+    flex: 1 1 0%;
+    min-width: 0px;
+}
+
+.caption {
+    margin-bottom: 24px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    span {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: rgba(22, 24, 35, 1);
+        display: inline;
+    }
+    .captionLength {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: rgba(22, 24, 35, 0.5);
+        white-space: pre;
+    }
+}
+
+.hashtagContainer {
+    margin-top: 4px;
+    min-height: 46px;
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 4px;
+}
+
+.hashtagName {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: text;
+    width: 100%;
+    position: relative;
+    padding: 14px 80px 14px 16px;
+    text-align: left;
+    input {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        font-family: var(--font-family);
+    }
+}
+
+.hashtagIcon {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    span:first-child {
+        margin-right: 8px;
+    }
+}
+
+.imagesList {
+    position: relative;
+    line-height: 0;
+    padding: 6px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 4px;
+}
+
+.images {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 154px;
+}
+
+.image {
+    background-color: rgba(22, 24, 35, 0.03);
+    width: 85.75px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.noImages {
+    width: 85.75px;
+    height: 150px;
+    object-fit: cover;
+    background-color: rgba(22, 24, 35, 0.03);
+}
+
+.copyright {
+    margin-top: 24px;
+}
+
+.switch {
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.copyrightDesc {
+    span {
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: rgba(22, 24, 35, 0.75);
+        a {
+            line-height: 1.5;
+            font-weight: 600;
+            color: rgba(22, 24, 35, 1);
+        }
+    }
+}
+
+.btn-row {
+    display: flex;
+    margin-top: 24px;
+}
+
+.discardBn,
+.postBtn {
+    width: 164px;
+    height: 48px;
+}
+
+.postBtn {
+    cursor: not-allowed;
+    color: rgba(22, 24, 35, 0.34);
+    background-color: rgba(235, 235, 235, 1);
+    border-color: rgba(235, 235, 235, 1);
+}
+
+// Video play control

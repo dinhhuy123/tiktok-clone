@@ -1,0 +1,87 @@
+.whoCanWatch {
+    margin-top: 24px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    span {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: rgba(22, 24, 35, 1);
+        display: inline;
+    }
+    .captionLength {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: rgba(22, 24, 35, 0.5);
+        white-space: pre;
+    }
+}
+
+.itemsContainer {
+    width: 300px;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.items {
+    ul {
+        list-style: none;
+        li {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 16px;
+            line-height: 22px;
+            box-sizing: border-box;
+            color: rgb(22, 24, 35);
+            cursor: pointer;
+        }
+    }
+}
+
+.choiceContainer {
+    margin-top: 4px;
+    width: 300px;
+    height: 36px;
+    position: relative;
+}
+
+.choices {
+    width: 300px;
+    height: 36px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 7px 12px;
+    box-sizing: border-box;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchBtn {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.turnAround {
+    transform: rotate(180deg);
+    transition-duration: 0.3s;
+}
+
+.turnBack {
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+}

@@ -1,0 +1,76 @@
+.commentFooter {
+    flex: 0 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 30px;
+    padding: 21px 0px;
+}
+
+.footerContainer {
+    display: flex;
+}
+
+.textContainer {
+    flex: 1 1 auto;
+}
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: rgba(22, 24, 35, 0.06);
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 0px 9px;
+
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.textCenter {
+    flex: 1 1 auto;
+    height: auto;
+    margin: 11px 8px 11px 0px;
+}
+
+.textStyle {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    caret-color: var(--primary);
+    color: var(--text-color);
+    display: block;
+    overflow-y: hidden;
+    padding: 1px 0;
+    resize: none;
+    width: 100%;
+    font-family: var(--font-family);
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.count {
+    color: rgba(22, 24, 35, 0.5);
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.postBtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+    flex: 0 0 48px;
+    font-size: 14px;
+    line-height: 39px;
+    text-align: right;
+    margin-right: 4px;
+}
+
+.disabled {
+    color: rgba(22, 24, 35, 0.34);
+}

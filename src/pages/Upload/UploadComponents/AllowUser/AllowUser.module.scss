@@ -1,0 +1,99 @@
+.allowUsers {
+    margin-top: 24px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    span {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: rgba(22, 24, 35, 1);
+        display: inline;
+    }
+    .captionLength {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: rgba(22, 24, 35, 0.5);
+        white-space: pre;
+    }
+}
+
+.checkedBoxesContainer {
+    display: flex;
+    .checkedBox {
+        margin-right: 32px;
+        display: flex;
+        cursor: pointer;
+        &:hover {
+            .unchecked {
+                border: 1.5px solid rgb(234, 40, 78);
+            }
+        }
+        span {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 400;
+            padding-left: 12px;
+        }
+    }
+}
+
+.checkedBoxCustom {
+    box-sizing: border-box;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-block-start: 3px;
+    .checked {
+        box-sizing: border-box;
+        appearance: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        cursor: pointer;
+        margin: 0px;
+    }
+}
+
+.visible {
+    display: none;
+}
+
+.custom {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    background: rgba(254, 44, 85, 1);
+    cursor: pointer;
+}
+
+.unchecked {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 1);
+    border: 1.5px solid rgba(22, 24, 35, 0.12);
+}

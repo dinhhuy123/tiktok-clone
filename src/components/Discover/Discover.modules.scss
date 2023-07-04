@@ -1,0 +1,59 @@
+.discoverWrapper {
+    position: relative;
+    padding-bottom: 8px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 0;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+}
+
+.label {
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.discover-btn {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.btn {
+    justify-content: flex-start;
+    border: 1px solid rgba(22, 24, 35, 0.2);
+    box-sizing: border-box;
+    height: 24px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    max-width: 100%;
+    min-height: 24px;
+    padding: 3px 10px;
+    position: relative;
+    transition: background-color 0.2s ease-in-out 0s;
+}
+
+.title {
+    max-width: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(22, 24, 35, 0.75);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: -5px;
+}
+
+@media screen and (max-width: 1071px) {
+    .discoverWrapper {
+        display: none;
+    }
+}

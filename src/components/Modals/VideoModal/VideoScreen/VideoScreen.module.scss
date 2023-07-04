@@ -1,0 +1,327 @@
+.videoContainer {
+    flex: 1 0 600px;
+}
+
+.videoPlayer {
+    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoBackground {
+    background: 50% / cover no-repeat;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    height: 10%;
+    left: 50%;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: scale(11);
+    transform: scale(11);
+    width: 10%;
+}
+
+.videoSpace {
+    background-color: rgba(22, 24, 35, 0.06);
+    height: 100%;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgba(84, 84, 84, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    transition: opacity 0.3s ease 0s;
+    z-index: 100;
+    left: 20px;
+    &:hover {
+        background-color: rgba(37, 37, 37, 0.6);
+        opacity: 0.7;
+    }
+}
+
+.videoImage {
+    visibility: hidden;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.video {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.closeIcon {
+    color: var(--white);
+    width: 24px;
+    height: 24px;
+}
+
+.reportBtn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 16px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 100px;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    background-color: rgba(84, 84, 84, 0.5);
+    right: 20px;
+    &:hover {
+        background-color: rgba(37, 37, 37, 0.6);
+        opacity: 0.7;
+    }
+}
+
+.reportIcon {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.nextVideoBtn,
+.prevVideoBtn {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgba(84, 84, 84, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    top: calc(50% + 8px);
+    margin-top: -24px;
+    right: 20px;
+}
+
+.prevVideoBtn {
+    top: calc(50% - 48px);
+    transform: rotate(180deg);
+}
+
+.nextIcon,
+.prevIcon {
+    width: 24px;
+    height: 24px;
+    color: var(--white);
+}
+
+.playIcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 100;
+    width: 70px;
+    height: 70px;
+    color: var(--white);
+}
+
+.volumeContainer {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    &:hover {
+        .volumeControl {
+            display: block;
+        }
+    }
+}
+
+.volumeControl {
+    width: 28px;
+    height: 96px;
+    margin: 8px 6px;
+    display: block;
+    position: relative;
+    background: rgba(84, 84, 84, 0.5);
+    border-radius: 32px;
+    display: none;
+}
+
+.volumeControlProgress {
+    width: 4px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.34);
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    bottom: 8px;
+    cursor: pointer;
+}
+
+.volumeControlCircle {
+    width: 16px;
+    height: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.volumeControlBar {
+    width: 4px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 12px;
+    bottom: 8px;
+    cursor: pointer;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+}
+
+.inputRange {
+    position: absolute;
+    right: -34px;
+    bottom: 32px;
+    transform: rotate(270deg);
+    z-index: 100;
+    opacity: 0;
+}
+
+.volumeRange {
+    width: 90px;
+    cursor: pointer;
+}
+
+.volumeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none rgba(84, 84, 84, 0.5);
+    outline: none;
+    padding: 0px;
+    display: flex;
+    transition: opacity 0.3s ease 0s;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 100px;
+    &:hover {
+        background-color: rgba(37, 37, 37, 0.6);
+        opacity: 0.7;
+    }
+}
+
+.muteIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.volumeIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.progressBarContainer {
+    width: calc(100% - 160px);
+    height: 24px;
+    padding-inline: 16px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease 0s;
+    bottom: 28px;
+    cursor: initial;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 56.25vh;
+    // visibility: hidden;
+}
+
+.progressBarControl {
+    height: 4px;
+    width: 100%;
+    background: rgba(86, 86, 86, 0.8);
+}
+
+.progressBar {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    width: 0px;
+}
+
+// .progressBarControl {
+//     width: 100%;
+//     height: 24px;
+//     flex: 1 1 auto;
+//     position: relative;
+// }
+
+// .progressBar {
+//     height: 4px;
+//     width: 100%;
+//     background-color: rgba(255, 255, 255, 0.34);
+//     position: absolute;
+//     left: 0px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     cursor: pointer;
+// }
+
+// .progress {
+//     height: 4px;
+//     width: 100%;
+//     background-color: rgb(255, 255, 255);
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     cursor: pointer;
+//     transform-origin: left center;
+// }
+
+.timeProgress {
+    flex: 0 0 88px;
+    max-width: 88px;
+    margin-inline-start: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    text-align: end;
+    // white-space: nowrap;
+    // font-feature-settings: "tnum";
+    // font-variant-numeric: tabular-nums;
+    // font-family: Tahoma, PingFangSC, sans-serif;
+}

@@ -1,0 +1,231 @@
+.commentBody {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(248, 248, 248);
+    border-top: none;
+    border-bottom: 1px solid rgba(22, 24, 35, 0.2);
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyContainer {
+    // padding-top: 24px;
+    width: 100%;
+    overflow: hidden auto;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    position: relative;
+    padding: 24px 32px;
+}
+
+.content {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0px;
+    width: 100%;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    position: relative;
+    &:hover {
+        .moreBtn {
+            display: block;
+        }
+        .likeComment {
+            padding-top: 0;
+        }
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 40px;
+    margin-right: 12px;
+    object-fit: cover;
+    width: 40px;
+    cursor: pointer;
+}
+
+.commentContainer {
+    flex: 1 1 auto;
+}
+
+.avatar:hover ~ .commentContainer .userLink .name {
+    text-decoration: underline;
+}
+
+.userLink:hover .name {
+    text-decoration: underline;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.creator {
+    font-size: 16px;
+    color: rgb(254, 44, 85);
+    font-weight: 700;
+    margin-left: 4px;
+    &::before {
+        color: #161823;
+        content: '·';
+        margin-right: 4px;
+    }
+}
+
+.comment {
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-line;
+    word-break: break-word;
+    margin-bottom: 6px;
+}
+
+.time {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 14px;
+    line-height: 20px;
+    span:last-child {
+        cursor: pointer;
+        color: rgba(22, 24, 35, 0.5);
+        font-weight: 400;
+        margin-left: 24px;
+    }
+}
+
+.likeComment {
+    margin-left: 18px;
+    padding-right: 2px;
+    width: 24px;
+    flex: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.moreBtn {
+    width: 24px;
+    height: 24px;
+    display: none;
+    cursor: pointer;
+}
+
+.likeReaction {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 12px;
+    line-height: 17px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.heart {
+    width: 18px;
+    height: 18px;
+}
+
+// Tippy Css
+.deleteContainer {
+    min-width: 200px;
+    position: relative;
+}
+
+.arrow {
+    top: 3px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-67%) rotate(45deg);
+    background-color: var(--white);
+    // border-width: 17px 15px;
+    // border-style: solid;
+    // border-color: transparent transparent var(--white);
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.minHeight {
+    min-height: 50px;
+}
+
+.itemList {
+    padding: 8px 16px;
+    list-style: none;
+}
+
+.title {
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
+}
+.border {
+    border-bottom: 1px solid rgba(22, 24, 35, 0.1);
+}
+
+// Confirm modal css
+.deleteTitle {
+    padding: 32px 32px 24px;
+    div {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgb(22, 24, 35);
+        word-break: break-word;
+        text-align: center;
+    }
+}
+
+.general {
+    padding: 16.5px 16px 17px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    word-break: break-word;
+    cursor: pointer;
+}
+
+.delete {
+    color: rgb(22, 24, 35);
+}
+
+.cancel {
+    color: rgba(22, 24, 35, 0.5);
+}

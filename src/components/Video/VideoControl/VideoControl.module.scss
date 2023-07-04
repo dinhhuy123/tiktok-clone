@@ -1,0 +1,212 @@
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &:hover {
+        .reportBtn {
+            opacity: 1;
+        }
+        .playBtn {
+            opacity: 1;
+        }
+        .pauseBtn {
+            opacity: 1;
+        }
+        .volumeBtn {
+            opacity: 1;
+        }
+        .progressBarContainer {
+            opacity: 1;
+        }
+    }
+}
+
+.outside {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.videoInside {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.reportBtn {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    right: 16px;
+    position: absolute;
+    top: 24px;
+    transition: opacity 0.3s ease 0s;
+    opacity: 0;
+    span {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+    }
+}
+
+.reportIcon {
+    width: 14px;
+    height: 16px;
+}
+
+.playBtn,
+.pauseBtn {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+    transition: opacity 0.3s ease 0s;
+    opacity: 0;
+}
+
+.playIcon,
+.pauseIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.volumeContainer {
+    position: absolute;
+    bottom: 26px;
+    left: unset;
+    right: 12px;
+    &:hover {
+        .volumeControl {
+            display: block;
+        }
+    }
+}
+
+.volumeControl {
+    width: 24px;
+    height: 64px;
+    margin: 8px 7px 0px;
+    display: block;
+    position: relative;
+    cursor: initial;
+    // background: rgba(22, 24, 35, 0.34);
+    border-radius: 32px;
+    display: none;
+}
+
+.volumeControlProgress {
+    width: 2px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.34);
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.volumeControlCircle {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    position: absolute;
+    left: 6px;
+    bottom: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.volumeControlBar {
+    width: 2px;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 11px;
+    bottom: 8px;
+    cursor: pointer;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+    border-radius: 4px;
+}
+
+.inputRange {
+    position: absolute;
+    right: -19px;
+    bottom: 21px;
+    transform: rotate(270deg);
+    z-index: 100;
+    opacity: 0;
+}
+
+.volumeRange {
+    width: 54px;
+    cursor: pointer;
+}
+
+.volumeBtn {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 8px;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease 0s;
+}
+
+.muteIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.volumeIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.progressBarContainer {
+    width: 100%;
+    height: 16px;
+    padding-inline: 12px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+    bottom: 12px;
+    cursor: initial;
+    display: flex;
+    align-items: center;
+}
+
+.progressBarControl {
+    height: 2px;
+    width: 100%;
+    background: rgba(86, 86, 86, 0.8);
+}
+
+.progressBar {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    width: 0px;
+}
+
+.timeProgress {
+    flex: 0 0 64px;
+    max-width: 64px;
+    margin-inline-start: 8px;
+    font-size: 10px;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    text-align: end;
+}

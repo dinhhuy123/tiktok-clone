@@ -1,0 +1,13 @@
+.home-page {
+    margin-right: 16px;
+    margin-left: 16px;
+    width: 692px;
+    max-width: 692px;
+}
+
+@media screen and (max-width: 1071px) {
+    .home-page {
+        width: 592px;
+        max-width: 592px;
+    }
+}

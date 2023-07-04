@@ -1,0 +1,78 @@
+.month-container {
+    position: relative;
+}
+
+.mo-da-ye {
+    width: 120px;
+    height: 44px;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(22, 24, 35, 0.34);
+    font-size: 1.6rem;
+    background: rgba(22, 24, 35, 0.06);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.active {
+    color: rgb(22, 24, 35);
+}
+
+.turn-around {
+    transform: rotate(180deg);
+    transition-duration: 0.3s;
+}
+
+.turn-back {
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+}
+
+.search-code-btn {
+    cursor: pointer;
+}
+
+.search-month {
+    position: absolute;
+}
+
+.fix-padding {
+    padding-top: 0;
+}
+
+.month-list-container {
+    left: 0;
+    right: 0;
+    width: 120px;
+    max-height: 320px;
+    overflow: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+    top: 50px;
+    z-index: 12;
+    display: block;
+    transition: display 0.3s ease 0s;
+}
+
+.month-list {
+    li {
+        height: 34px;
+        font-size: 1.6rem;
+        padding: 0px 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: rgb(22, 24, 35);
+        &:hover {
+            background: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
+
+.check-icon {
+    padding-left: 12px;
+}
