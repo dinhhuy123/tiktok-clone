@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
-import { Scrollbars as CustomScrollbar } from 'react-custom-scrollbars';
+import { Scrollbars as CustomScrollbar } from 'react-custom-scrollbars-2';
 import Menu, { MenuItem } from './Menu';
 import styles from './Sidebar.module.scss';
 import config from '~/config';
