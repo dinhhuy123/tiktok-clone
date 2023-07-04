@@ -32,7 +32,9 @@
         "redux-devtools-extension": "^2.13.9",
         "redux-persist": "^6.0.0",
         "video-snapshot": "^1.0.11",
-        "web-vitals": "^2.1.4",
+        "web-vitals": "^2.1.4"
+    },
+    "devDependencies": {
         "@babel/core": "^7.21.3",
         "@babel/preset-env": "^7.20.2",
         "babel-loader": "^9.1.2",
@@ -45,7 +47,6 @@
         "react-virtuoso": "^4.3.5",
         "sass": "^1.54.0"
     },
-    "devDependencies": {},
     "scripts": {
         "start": "react-app-rewired start",
         "predeploy": "npm run build",
