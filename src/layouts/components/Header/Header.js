@@ -32,6 +32,10 @@ import * as authService from '~/services/authService';
 
 const cx = classNames.bind(styles);
 
+const currentUser = JSON.parse(localStorage.getItem('user'));
+
+const user = currentUser ? currentUser.data.nickname : '';
+
 const MENU_ITEMS = [
     {
         icon: <LanguageIcon />,
@@ -71,7 +75,7 @@ const USERS_MENU = [
     {
         icon: <ViewProfileIcon />,
         title: 'View profile',
-        to: '/users/@dinhhuy98',
+        to: `/users/@${user}`,
     },
     {
         icon: <GetCoinsIcon />,
@@ -99,7 +103,6 @@ const USERS_MENU = [
 
 function Header({ onClick, className }) {
     const [userProfile, setUserProfile] = useState({});
-    const currentUser = JSON.parse(localStorage.getItem('user'));
     const accessToken = currentUser && currentUser.meta.token ? currentUser.meta.token : '';
 
     const [notification, setNotification] = useState(false);
